@@ -1,38 +1,304 @@
-.App {
+* {
+  font-family: "Mali", cursive;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    60deg,
+    rgb(153, 88, 88),
+    rgb(208, 166, 106)
+  );
+  min-height: 100vh;
+}
+
+.post {
+  background-color: #d1c5b6;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  margin: 10%;
+  padding: 5% 10% 10%;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.card {
+  transition: 0.5s;
+}
+
+.content {
+  margin-top: 5%;
+  font-size: 28px;
+}
+
+.card:hover {
+  filter: opacity(0.95);
+}
+
+/* Perfil */
+
+.perfil {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section1 {
+  flex-grow: 1;
+  margin: 5%;
+}
+
+.section1 .img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 5px solid #d1c5b6c9;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 30px rgba(20, 19, 19, 0.923);
+  background-color: #a45e4fb0;
+}
+
+.section1 .img-container img {
+  height: 102%;
+  object-fit: cover;
+}
+
+.section1 .info-container {
+  margin-top: 1.5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.section1 .info-container .username {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.section1 .info-container .description {
+  box-shadow: 0 0 7px rgba(31, 30, 33, 0.705);
+  padding: 3.5% 2.5%;
+  border-radius: 25px;
+  background-color: rgba(26, 37, 62, 0.897);
+  color: rgba(184, 162, 162, 0.924);
+  margin-top: 1.5%;
+  width: 45vw;
+
+  justify-self: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section2 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
+  flex-grow: 0;
+  background-color: rgb(20, 24, 27);
+  height: 90.8vh;
+  width: 20vw;
+  justify-self: end;
+  transition: 0.5s;
+  overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section2 .anecdotes-lenght {
+  color: #ddd4cad2;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section2 .post-list {
+  margin: 15% 4%;
+  color: #ded4c7c0;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.section2 .post-list:hover {
+  filter: brightness(2);
+}
+
+.section2 .mas {
+  color: #d1c5b6c0;
+
+  font-size: 200px;
+  font-weight: 700;
+  transform: 0.5s;
+}
+.section2 .mas:hover {
+  filter: brightness(1.2);
+}
+
+
+.container-likes {
+  cursor: pointer;
+  background-color: #c78c65b0;
+  border: none;
+  border-radius: 20px;
+  width: auto;
+  height: 50px;
+  margin: 1.2rem 2.4rem;
+  transition: 0.5s;
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  opacity: .7;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 0 1.3rem 0 0;
+  border: 3px solid #746662c0;
+  box-shadow: 0 0 5px rgba(138, 120, 108, 0.664);
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
 }
 
-.App-link {
-  color: #61dafb;
+.btn-active {
+  opacity: 1;
+  background-color: #7f9cc9c0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container-likes:hover {
+  filter: brightness(1.2);
+}
+
+.btn-like {
+  background-color: #503d253c;
+  border: none;
+  width: auto;
+  height: 50px;
+  padding-left: 40%;
+  transition: 0.5s;
+}
+
+.likes-count{
+  color: #f0d6d0b0;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.x{
+  position: absolute;
+  border: 3px solid #37110692;
+  right: -1rem;
+  top: -.5rem;
+  font-weight: 900;
+  color: rgb(28, 5, 5);
+  font-size: 25px;
+  padding: .3rem 1.2rem;
+}
+
+.empty-message{
+  padding: 10rem ;
+  color: #30303086;
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 10px;
+  transition: .8s;
+  border-radius: 3rem;
+}
+
+.empty-message:hover{
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.734);
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media only screen and (max-width: 1350px) {
+
+  
+  .section1 {
+    height: 72vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section1 .info-container .description {
+
+    width: 90vw;
+
+  }
+
+  .section2 {
+    width: 100vw;
+    height: 70vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.846);
+
+
+    max-height: auto;
+  }
+
+  .section2 .anecdotes-lenght {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .x{
+    position: absolute;
+    border: 3px solid #37110692;
+    right: -.5rem;
+    top: -.5rem;
+    font-weight: 900;
+    color: rgb(28, 5, 5);
+    font-size: 25px;
+    padding: .3rem 1.2rem;
+  }
+  
+  .post {
+    width: 100vw;
+    margin: 0;
+    padding: 10% 6% 10%;
+  }
+
+  .title {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+
+  .content {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+
+  .perfil {
+    margin-top: 8%;
+  }
+
+  .section1 {
+    margin-bottom: -50px;
+  }
+
+  .section1 .info-container .description {
+    padding: 20px;
+    margin-top: 25px;
+  }
+
+
+
+  .section2 .anecdotes-lenght {
+    margin-top: 4%;
+    margin-bottom: 1%;
   }
 }
