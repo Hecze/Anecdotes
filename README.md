@@ -1,7 +1,7 @@
 # Technologies
 
   * NodeJs
-    * Redux
+    * MongoDB
   * React
     * Redux
     * Bootstrap
