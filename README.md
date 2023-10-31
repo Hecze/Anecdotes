@@ -1,11 +1,11 @@
 # Technologies
 
-Frontend:
--React
--Redux
-
-Backend:
--MongoDb
+  * NodeJs
+    * Redux
+  * React
+    * Redux
+    * Bootstrap
+ 
 
 # Getting Started with Create React App
 
