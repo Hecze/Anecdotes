@@ -1,4 +1,4 @@
-#Techonologies
+# Technologies
 
 Frontend:
 -React
