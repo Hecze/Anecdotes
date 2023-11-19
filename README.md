@@ -6,6 +6,8 @@
     * Redux
     * Bootstrap
  
+[![Captura3.png](https://i.postimg.cc/d3mY4hYq/Captura3.png)](https://postimg.cc/JHnvh40g)
+
 
 # Getting Started with Create React App
 
