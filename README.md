@@ -1,33 +1,10 @@
-# Technologies
-
-  * NodeJs
-    * MongoDB
-  * React
-    * Redux
-    * Bootstrap
- 
-[![Captura3.png](https://i.postimg.cc/d3mY4hYq/Captura3.png)](https://postimg.cc/JHnvh40g)
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 # Anonymous Narrators Network
 
 **Anonymous Narrators Network** is a platform where users can share stories, experiences, and creative works anonymously.
+
+[![Captura3.png](https://i.postimg.cc/d3mY4hYq/Captura3.png)](https://postimg.cc/JHnvh40g)
+
 
 ## Features
 
@@ -42,7 +19,31 @@ You may also see any lint errors in the console.
 - **Empathy and Support:** A space to share personal experiences and seek understanding.
 - **Exploration:** Discover diverse perspectives and stories.
 
-For more in
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technologies
+
+  * NodeJs
+    * MongoDB
+  * React
+    * Redux
+    * Bootstrap
+ 
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
 ### `npm run build` fails to minify
 
