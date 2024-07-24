@@ -1,7 +1,7 @@
 
 # Anonymous Narrators Network
 
-**Anonymous Narrators Network** is a platform where users can share stories, experiences, and creative works anonymously.
+Platform where users can share stories, experiences, and creative works anonymously.
 
 [![Captura3.png](https://i.postimg.cc/d3mY4hYq/Captura3.png)](https://postimg.cc/JHnvh40g)
 
